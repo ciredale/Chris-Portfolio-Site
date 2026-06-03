@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level Design — Chris Iredale</title>
+<meta name="description" content="Level design by Chris Iredale — co-op puzzle levels in Lucky Duckies, the open world of Quest Friends Forever, and BFF's platforming.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="plate-bar">
+  <div class="plate-bar__in">
+    <a class="brand" href="index.html" aria-label="Chris Iredale — home">
+      <span class="brand__mono">CI</span>
+      <span class="brand__txt"><b>Chris Iredale</b><span>Game Design</span></span>
+   </a>
+    <nav class="tabs" aria-label="Disciplines">
+      <a class="tab" href="game-design.html">Game Design</a>
+      <a class="tab" href="narrative.html">Narrative</a>
+      <a class="tab" href="vfx.html">VFX</a>
+      <a class="tab" href="level-design.html" aria-current="page">Level Design</a>
+    </nav>
+    <div class="nav-end">
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <button class="menu-btn" aria-label="Menu"><b>☰</b>Menu</button>
+  </div>
+  <nav class="mnav" aria-label="Mobile">
+    <a href="game-design.html">Game Design</a>
+    <a href="narrative.html">Narrative</a>
+    <a href="vfx.html">VFX</a>
+    <a href="level-design.html">Level Design</a>
+    <a href="index.html#about">About <span class="n">→</span></a>
+    <a href="index.html#contact">Contact <span class="n">→</span></a>
+  </nav>
+</header>
+
+<main class="canvas canvas--rule">
+
+  <header class="plate-head">
+    <div class="plate-head__meta">
+      <span class="mono-sm">Plate 04</span>
+      <span class="mono-sm">Discipline / Level Design</span>
+      <span class="mono-sm">03 Projects</span>
+      <span class="mono-sm" style="color:var(--red);">Co-op · Open World · 2D</span>
+    </div>
+    <div class="plate-head__lock">
+      <div><h1 class="plate-head__title">Level<br>Design</h1></div>
+      <p class="plate-head__thesis">Spaces that teach themselves — co-op puzzle boxes, open worlds, and platforming gauntlets.</p>
+    </div>
+  </header>
+
+  <!-- LUCKY DUCKIES (hero, trailer) -->
+  <article class="mod rise">
+    <div class="mod__media duo">
+      <span class="reg red tl"></span><span class="reg br"></span>
+      <div class="frame frame--halftone">
+        <div class="frame__media">
+          <iframe src="https://www.youtube-nocookie.com/embed/2aWZTeQMw_0?rel=0" title="Lucky Duckies — Official Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="frame__cap"><span>FIG. 04.1 — <span class="red">LUCKY DUCKIES</span></span><span>CO-OP PUZZLE LEVELS</span></div>
+      </div>
+    </div>
+    <div class="mod__text">
+      <div class="tag-row">
+        <span class="tag tag--red">Co-op Puzzle Levels</span>
+        <span class="tag">Unreal 5.5</span>
+        <span class="tag">PC · Mobile</span>
+        <span class="tag">Team 53</span>
+      </div>
+      <h2 class="proj-title">Lucky Duckies</h2>
+      <p class="proj-kicker">An Overflowing Bathroom, One Room at a Time</p>
+      <p class="proj-over">Two rubber-duck parents must work together across a flooding bathroom — every space is a puzzle box built for two players.</p>
+      <ul class="bullets">
+        <li data-n="1">Levels stage co-op beats — spin water wheels, raise platforms, and launch each other through bubbly obstacle courses that demand shared timing and position.</li>
+        <li data-n="2">Each puzzle solved transforms the home, unlocking new rooms and bending the room&rsquo;s physics to escalate the next challenge.</li>
+        <li data-n="3">Difficulty curves from playful onboarding to over-the-top bath-time chaos, keeping two-player coordination legible at every step.</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- QUEST FRIENDS FOREVER (flip, slot) -->
+  <article class="mod mod--flip rise">
+    <div class="mod__media duo">
+      <span class="reg tl"></span><span class="reg red br"></span>
+      <div class="frame">
+        <div class="frame__media">
+          <image-slot id="ld-qff" shape="rect" fit="cover" placeholder="Drop a world map / town screenshot"></image-slot>
+        </div>
+        <div class="frame__cap"><span>FIG. 04.2 — <span class="red">QUEST FRIENDS</span></span><span>OPEN WORLD · SOLO</span></div>
+      </div>
+    </div>
+    <div class="mod__text">
+      <div class="tag-row">
+        <span class="tag tag--role">Open World &amp; Town Flow</span>
+        <span class="tag">GameMaker</span>
+        <span class="tag">Solo</span>
+      </div>
+      <h2 class="proj-title">Quest Friends<br>Forever</h2>
+      <p class="proj-kicker">A Rewildable Mountain Forest</p>
+      <p class="proj-over">A magical mountainside, stripped of its magic by past adventurers, that players slowly restore — its spaces opening up as the world heals.</p>
+      <ul class="bullets">
+        <li data-n="1">Town-upgrade, day/night, and weather systems reshape how the world reads and routes the player over time.</li>
+        <li data-n="2">24 NPCs seed quests that pull players across the map, turning traversal into a web of intentions.</li>
+        <li data-n="3">Designed for solo pacing — exploration, farming, and combat zones balanced into one cohesive loop.</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- BFF (slot) -->
+  <article class="mod rise">
+    <div class="mod__media duo">
+      <span class="reg red tl"></span><span class="reg br"></span>
+      <div class="frame frame--halftone">
+        <div class="frame__media">
+          <image-slot id="ld-bff" shape="rect" fit="cover" placeholder="Drop BFF level screenshot"></image-slot>
+        </div>
+        <div class="frame__cap"><span>FIG. 04.3 — <span class="red">BFF</span></span><span>2D PLATFORMING</span></div>
+      </div>
+    </div>
+    <div class="mod__text">
+      <div class="tag-row">
+        <span class="tag tag--role">2D Platforming World</span>
+        <span class="tag">Unity · Corgi</span>
+      </div>
+      <h2 class="proj-title">BFF</h2>
+      <p class="proj-kicker">Traversal as Story Delivery</p>
+      <p class="proj-over">A 2D platforming world where what you collect — and where it sits — gates the story&rsquo;s emotional reveals.</p>
+      <ul class="bullets">
+        <li data-n="1">Item placement across the world is paced to feed the AI-training narrative beat by beat.</li>
+        <li data-n="2">Platforming routes double as a delivery system for character and worldbuilding moments.</li>
+      </ul>
+    </div>
+  </article>
+
+</main>
+
+<footer class="foot" id="contact">
+  <div class="foot__in">
+    <p class="foot__big">Next: <a href="game-design.html">Game Design →</a></p>
+    <div class="foot__grid">
+      <nav class="foot__nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="game-design.html">Game Design</a>
+        <a href="narrative.html">Narrative</a>
+        <a href="vfx.html">VFX</a>
+        <a href="level-design.html">Level Design</a>
+        <a href="https://www.linkedin.com/in/chrisiredale/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </nav>
+      <div class="foot__meta">
+        © 2026 Chris Iredale<br>
+        Writer · Narrative Designer · Game Designer<br>
+        USC Games — Los Angeles, CA
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="image-slot.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
+
+# Editor folders
+.vscode/
+.idea/
+
+# Node (only if you later add a build step)
+node_modules/

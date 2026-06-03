@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Design — Chris Iredale</title>
+<meta name="description" content="Game design work by Chris Iredale — directing a 64-person studio on Lucky Duckies and solo-building Quest Friends Forever.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="plate-bar">
+  <div class="plate-bar__in">
+    <a class="brand" href="index.html" aria-label="Chris Iredale — home">
+      <span class="brand__mono">CI</span>
+      <span class="brand__txt"><b>Chris Iredale</b><span>Game Design</span></span>
+   </a>
+    <nav class="tabs" aria-label="Disciplines">
+      <a class="tab" href="game-design.html" aria-current="page">Game Design</a>
+      <a class="tab" href="narrative.html">Narrative</a>
+      <a class="tab" href="vfx.html">VFX</a>
+      <a class="tab" href="level-design.html">Level Design</a>
+    </nav>
+    <div class="nav-end">
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <button class="menu-btn" aria-label="Menu"><b>☰</b>Menu</button>
+  </div>
+  <nav class="mnav" aria-label="Mobile">
+    <a href="game-design.html">Game Design</a>
+    <a href="narrative.html">Narrative</a>
+    <a href="vfx.html">VFX</a>
+    <a href="level-design.html">Level Design</a>
+    <a href="index.html#about">About <span class="n">→</span></a>
+    <a href="index.html#contact">Contact <span class="n">→</span></a>
+  </nav>
+</header>
+
+<main class="canvas canvas--rule">
+
+  <!-- PLATE HEADER -->
+  <header class="plate-head">
+    <div class="plate-head__meta">
+      <span class="mono-sm">Plate 01</span>
+      <span class="mono-sm">Discipline / Game Design</span>
+      <span class="mono-sm">02 Projects</span>
+      <span class="mono-sm" style="color:var(--red);">Director &middot; Solo Dev</span>
+    </div>
+    <div class="plate-head__lock">
+      <div>
+        <h1 class="plate-head__title">Game<br>Design</h1>
+      </div>
+      <p class="plate-head__thesis">Directing teams and shipping systems — from a 60+ studio to a solo build.</p>
+    </div>
+  </header>
+
+  <!-- PROJECT LUCKY DUCKIES (hero, trailer) -->
+  <article class="mod rise">
+    <div class="mod__media duo">
+      <span class="reg red tl"></span><span class="reg br"></span>
+      <div class="frame frame--halftone">
+        <div class="frame__media">
+          <iframe src="https://www.youtube-nocookie.com/embed/2aWZTeQMw_0?rel=0" title="Lucky Duckies — Official Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="frame__cap"><span>FIG. 01.1 — <span class="red">LUCKY DUCKIES</span></span><span>USC GAMES EXPO ’26</span></div>
+      </div>
+    </div>
+    <div class="mod__text">
+      <div class="tag-row">
+        <span class="tag tag--red">Director</span>
+        <span class="tag">PC · Mobile</span>
+        <span class="tag">Unreal 5.5</span>
+        <span class="tag">Team 53</span>
+        <span class="tag">1 Year</span>
+      </div>
+      <h2 class="proj-title">Lucky Duckies</h2>
+      <p class="proj-kicker">USC All Game School Project</p>
+      <p class="proj-over">A co-op networked 3D puzzle-platformer where two rubber-ducky parents race to gather their family and escape the bathtub before the dog jumps in for a wash.</p>
+      <ul class="bullets">
+        <li data-n="1">Directed 64 students from 3 universities across narrative, design, engineering, art, QA, UI, and user research in USC&rsquo;s prestigious All Game School Project program.</li>
+        <li data-n="2">Initial pitch and prototype was chosen from nearly 100 applicants across USC Games.</li>
+        <li data-n="3">Built in Unreal Engine 5.5 with Maya, Blender, and Houdini.</li>
+        <li data-n="4">Stood up a custom Notion ops hub tracking 70+ weekly tasks and turn-ins across every department; presented the build at bi-weekly reviews.</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- PROJECT QUEST FRIENDS FOREVER (flip, image slot) -->
+  <article class="mod mod--flip rise">
+    <div class="mod__media duo">
+      <span class="reg tl"></span><span class="reg red br"></span>
+      <div class="frame">
+        <div class="frame__media">
+          <image-slot id="gd-qff" shape="rect" fit="cover" placeholder="Drop Quest Friends Forever art / screenshot"></image-slot>
+        </div>
+        <div class="frame__cap"><span>FIG. 01.2 — <span class="red">QUEST FRIENDS</span></span><span>GAMEMAKER · SOLO</span></div>
+      </div>
+    </div>
+    <div class="mod__text">
+      <div class="tag-row">
+        <span class="tag tag--role">Game Designer</span>
+        <span class="tag">PC · Mac</span>
+        <span class="tag">GameMaker Studio</span>
+        <span class="tag">Solo</span>
+        <span class="tag">2 Years</span>
+      </div>
+      <h2 class="proj-title">Quest Friends<br>Forever</h2>
+      <p class="proj-kicker">Cozy 2D Wizard Farming RPG</p>
+      <p class="proj-over">Restore a magical mountain forest — rewild the land, heal the damage, and replenish the magic stripped away by greedy adventurers and their endless treasure hunts.</p>
+      <ul class="bullets">
+        <li data-n="1">Wrote 40,000+ lines of GML powering farming, crafting, combat, dialogue, quests, inventory, shopkeeping, lighting, town upgrades, weather, cutscenes, NPC AI, and day/night systems.</li>
+        <li data-n="2">Drew all art and animation in Aseprite; composed and recorded the original score in Ableton Live.</li>
+        <li data-n="3">Created 24 unique characters, each with their own quests for the player.</li>
+      </ul>
+    </div>
+  </article>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="foot" id="contact">
+  <div class="foot__in">
+    <p class="foot__big">Next: <a href="narrative.html">Narrative →</a></p>
+    <div class="foot__grid">
+      <nav class="foot__nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="game-design.html">Game Design</a>
+        <a href="narrative.html">Narrative</a>
+        <a href="vfx.html">VFX</a>
+        <a href="level-design.html">Level Design</a>
+        <a href="https://www.linkedin.com/in/chrisiredale/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </nav>
+      <div class="foot__meta">
+        © 2026 Chris Iredale<br>
+        Writer · Narrative Designer · Game Designer<br>
+        USC Games — Los Angeles, CA
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="image-slot.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
