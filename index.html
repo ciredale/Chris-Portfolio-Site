@@ -449,7 +449,7 @@
 <!-- ============ FOOTER / CONTACT ============ -->
 <footer class="foot" id="contact">
   <div class="foot__in">
-    <p class="foot__big">Let&rsquo;s make something that makes people go <a href="mailto:hello@chrisiredale.com">whoa.</a></p>
+    <p class="foot__big">Let&rsquo;s make something that makes people go <a href="#contact">whoa.</a></p>
     <div class="foot__grid">
       <nav class="foot__nav" aria-label="Footer">
         <a href="game-design.html">Game Design</a>
@@ -472,7 +472,7 @@ Los Angeles, CA</div>
   (function(){
     var form=document.getElementById('contact-form');
     if(!form) return;
-    var TO='hello@chrisiredale.com';
+    var TO='chris@chrisiredale.com';
     form.addEventListener('submit',function(e){
       e.preventDefault();
       var name=(document.getElementById('cf-name').value||'').trim();
