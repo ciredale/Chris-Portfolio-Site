@@ -22,11 +22,11 @@
       <a class="tab" href="game-design.html" aria-current="page">Game Design</a>
       <a class="tab" href="narrative.html">Narrative</a>
       <a class="tab" href="vfx.html">VFX</a>
-      <a class="tab" href="level-design.html">Level Design</a>
+      <!-- <a class="tab" href="level-design.html">Level Design</a> -->
     </nav>
     <div class="nav-end">
       <a href="index.html#about">About</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html#get-in-touch">Contact</a>
     </div>
     <button class="menu-btn" aria-label="Menu"><b>☰</b>Menu</button>
   </div>
@@ -34,9 +34,9 @@
     <a href="game-design.html">Game Design</a>
     <a href="narrative.html">Narrative</a>
     <a href="vfx.html">VFX</a>
-    <a href="level-design.html">Level Design</a>
+    <!-- <a href="level-design.html">Level Design</a> -->
     <a href="index.html#about">About <span class="n">→</span></a>
-    <a href="index.html#contact">Contact <span class="n">→</span></a>
+    <a href="index.html#get-in-touch">Contact <span class="n">→</span></a>
   </nav>
 </header>
 
@@ -47,7 +47,7 @@
     <div class="plate-head__meta">
       <span class="mono-sm">Plate 01</span>
       <span class="mono-sm">Discipline / Game Design</span>
-      <span class="mono-sm">02 Projects</span>
+      <span class="mono-sm">03 Projects</span>
       <span class="mono-sm" style="color:var(--red);">Director &middot; Solo Dev</span>
     </div>
     <div class="plate-head__lock">
@@ -89,15 +89,50 @@
     </div>
   </article>
 
-  <!-- PROJECT QUEST FRIENDS FOREVER (flip, image slot) -->
+  <!-- MYTH OF LUMI -->
   <article class="mod mod--flip rise">
     <div class="mod__media duo">
       <span class="reg tl"></span><span class="reg red br"></span>
       <div class="frame">
         <div class="frame__media">
+          <iframe src="https://www.youtube-nocookie.com/embed/pmrdBcIemHc?rel=0&autoplay=1&mute=1&loop=1&playlist=pmrdBcIemHc" title="Myth of Lumi — Official Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="frame__cap"><span>FIG. 01.2 — <span class="red">MYTH OF LUMI</span></span><span>STEAM · 89% POSITIVE</span></div>
+      </div>
+    </div>
+    <div class="mod__text">
+      <div class="tag-row" style="font-size: 14px">
+        <span class="tag tag--red">Narrative Designer</span>
+        <span class="tag">PC</span>
+        <span class="tag">Unity</span>
+        <span class="tag">Team 35</span>
+      </div>
+      <h2 class="proj-title">Myth of Lumi</h2>
+      <p class="proj-kicker">3D Physics Card Duel · Released on Steam</p>
+      <div class="awards">
+        <div class="award" style="width: 300px"><span style="font-size: 14px"><b>Gold</b> Tencent GWB Game Awards 2025 — Global University Track</span></div>
+        <div class="award" style="width: 300px"><span style="font-size: 14px"><b>HONORABLE MENTION</b> IGF 2026 — Best Student Game</span></div>
+      </div>
+      <p class="proj-over">Duel rival magicians by summoning Lumi — mystical creatures trapped inside your playing cards — to secure victory, fame, and fortune.</p>
+      <ul class="bullets">
+        <li data-n="1">Created 3 enemy characters and 2 creatures for the released title, overseeing character design from concept to in-game models.</li>
+        <li data-n="2">Built a creature-authoring system for the design team that sped up narrative and design timelines by a month.</li>
+        <li data-n="3">Wrote the narrative bible — story, characters, creatures, and worldbuilding — for the art and design teams.</li>
+        <li data-n="4">Wrote and recorded bark sheets and character dialogue; implemented all dialogue in Unity.</li>
+        <li data-n="5">Designed a narrative device where the hero's approach to the duel table triggers dynamic worldbuilding — leveraging crowd, rival, and announcer barks to set the stakes for players.</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- PROJECT QUEST FRIENDS FOREVER -->
+  <article class="mod rise">
+    <div class="mod__media duo">
+      <span class="reg red tl"></span><span class="reg br"></span>
+      <div class="frame">
+        <div class="frame__media">
           <iframe src="https://www.youtube-nocookie.com/embed/CWYB8TFIP2I?start=90&rel=0&autoplay=1&mute=1&loop=1&playlist=CWYB8TFIP2I" title="Quest Friends Forever" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
-        <div class="frame__cap"><span>FIG. 01.2 — <span class="red">QUEST FRIENDS</span></span><span>GAMEMAKER · SOLO</span></div>
+        <div class="frame__cap"><span>FIG. 01.3 — <span class="red">QUEST FRIENDS</span></span><span>GAMEMAKER · SOLO</span></div>
       </div>
     </div>
     <div class="mod__text">
@@ -119,19 +154,49 @@
     </div>
   </article>
 
+  <!-- GET IN TOUCH -->
+  <section class="getin rise" id="get-in-touch" aria-label="Get in touch">
+    <div class="getin__l">
+      <span class="getin__label">Get in touch</span>
+      <h2 class="getin__big">Have a project, a role, or a wild idea? <span class="red">Email me.</span></h2>
+      <p class="getin__sub">Open to game design, narrative, and writing roles — and always happy to talk shop.</p>
+    </div>
+    <div class="getin__r">
+      <form class="getin__form" id="contact-form" novalidate>
+        <div class="getin__rowfields">
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="you@studio.com" autocomplete="email">
+          </div>
+        </div>
+        <div class="field">
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" name="message" placeholder="Tell me about the project, role, or idea…"></textarea>
+        </div>
+        <button type="submit" class="getin__send">Send message <span class="arr">→</span></button>
+      </form>
+      <div class="getin__alt">
+        <a href="https://www.linkedin.com/in/chrisiredale/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <!-- FOOTER -->
 <footer class="foot" id="contact">
   <div class="foot__in">
-    <p class="foot__big">Next: <a href="narrative.html">Narrative →</a></p>
-    <div class="foot__grid">
+<div class="foot__grid">
       <nav class="foot__nav" aria-label="Footer">
         <a href="index.html">Home</a>
         <a href="game-design.html">Game Design</a>
         <a href="narrative.html">Narrative</a>
         <a href="vfx.html">VFX</a>
-        <a href="level-design.html">Level Design</a>
+        <!-- <a href="level-design.html">Level Design</a> -->
         <a href="https://www.linkedin.com/in/chrisiredale/" target="_blank" rel="noopener">LinkedIn ↗</a>
       </nav>
       <div class="foot__meta">
@@ -145,5 +210,21 @@
 
 <script src="image-slot.js"></script>
 <script src="assets/site.js"></script>
+<script>
+  (function(){
+    var form=document.getElementById('contact-form');
+    if(!form) return;
+    var TO='chrisjiredale@gmail.com';
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var name=form.querySelector('[name=name]').value.trim();
+      var email=form.querySelector('[name=email]').value.trim();
+      var msg=form.querySelector('[name=message]').value.trim();
+      var subject='Portfolio enquiry'+(name?(' — '+name):'');
+      var body=msg+'\n\n—\n'+(name?('From: '+name+'\n'):'')+(email?('Email: '+email):'');
+      window.location.href='mailto:'+TO+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    });
+  })();
+</script>
 </body>
 </html>

@@ -22,11 +22,11 @@
       <a class="tab" href="game-design.html">Game Design</a>
       <a class="tab" href="narrative.html" aria-current="page">Narrative</a>
       <a class="tab" href="vfx.html">VFX</a>
-      <a class="tab" href="level-design.html">Level Design</a>
+      <!-- <a class="tab" href="level-design.html">Level Design</a> -->
     </nav>
     <div class="nav-end">
       <a href="index.html#about">About</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html#get-in-touch">Contact</a>
     </div>
     <button class="menu-btn" aria-label="Menu"><b>☰</b>Menu</button>
   </div>
@@ -34,9 +34,9 @@
     <a href="game-design.html">Game Design</a>
     <a href="narrative.html">Narrative</a>
     <a href="vfx.html">VFX</a>
-    <a href="level-design.html">Level Design</a>
+    <!-- <a href="level-design.html">Level Design</a> -->
     <a href="index.html#about">About <span class="n">→</span></a>
-    <a href="index.html#contact">Contact <span class="n">→</span></a>
+    <a href="index.html#get-in-touch">Contact <span class="n">→</span></a>
   </nav>
 </header>
 
@@ -132,7 +132,7 @@
     </div>
     <div class="mod__text">
       <div class="tag-row">
-        <span class="tag tag--role">RPG Writer</span>
+        <span class="tag tag--role">Narrative Designer</span>
         <span class="tag">FATE System</span>
         <span class="tag">Kickstarter</span>
         <span class="tag">Elizabethan England</span>
@@ -148,19 +148,48 @@
     </div>
   </article>
 
+  <!-- GET IN TOUCH -->
+  <section class="getin rise" id="get-in-touch" aria-label="Get in touch">
+    <div class="getin__l">
+      <span class="getin__label">Get in touch</span>
+      <h2 class="getin__big">Have a project, a role, or a wild idea? <span class="red">Email me.</span></h2>
+      <p class="getin__sub">Open to game design, narrative, and writing roles — and always happy to talk shop.</p>
+    </div>
+    <div class="getin__r">
+      <form class="getin__form" id="contact-form" novalidate>
+        <div class="getin__rowfields">
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="you@studio.com" autocomplete="email">
+          </div>
+        </div>
+        <div class="field">
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" name="message" placeholder="Tell me about the project, role, or idea…"></textarea>
+        </div>
+        <button type="submit" class="getin__send">Send message <span class="arr">→</span></button>
+      </form>
+      <div class="getin__alt">
+        <a href="https://www.linkedin.com/in/chrisiredale/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
 
 </main>
 
 <footer class="foot" id="contact">
   <div class="foot__in">
-    <p class="foot__big">Next: <a href="vfx.html">VFX →</a></p>
-    <div class="foot__grid">
+<div class="foot__grid">
       <nav class="foot__nav" aria-label="Footer">
         <a href="index.html">Home</a>
         <a href="game-design.html">Game Design</a>
         <a href="narrative.html">Narrative</a>
         <a href="vfx.html">VFX</a>
-        <a href="level-design.html">Level Design</a>
+        <!-- <a href="level-design.html">Level Design</a> -->
         <a href="https://www.linkedin.com/in/chrisiredale/" target="_blank" rel="noopener">LinkedIn ↗</a>
       </nav>
       <div class="foot__meta">
@@ -174,5 +203,21 @@
 
 <script src="image-slot.js"></script>
 <script src="assets/site.js"></script>
+<script>
+  (function(){
+    var form=document.getElementById('contact-form');
+    if(!form) return;
+    var TO='chrisjiredale@gmail.com';
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var name=form.querySelector('[name=name]').value.trim();
+      var email=form.querySelector('[name=email]').value.trim();
+      var msg=form.querySelector('[name=message]').value.trim();
+      var subject='Portfolio enquiry'+(name?(' — '+name):'');
+      var body=msg+'\n\n—\n'+(name?('From: '+name+'\n'):'')+(email?('Email: '+email):'');
+      window.location.href='mailto:'+TO+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    });
+  })();
+</script>
 </body>
 </html>

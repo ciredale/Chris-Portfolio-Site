@@ -22,11 +22,11 @@
       <a class="tab" href="game-design.html">Game Design</a>
       <a class="tab" href="narrative.html">Narrative</a>
       <a class="tab" href="vfx.html" aria-current="page">VFX</a>
-      <a class="tab" href="level-design.html">Level Design</a>
+      <!-- <a class="tab" href="level-design.html">Level Design</a> -->
     </nav>
     <div class="nav-end">
       <a href="index.html#about">About</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html#get-in-touch">Contact</a>
     </div>
     <button class="menu-btn" aria-label="Menu"><b>☰</b>Menu</button>
   </div>
@@ -34,9 +34,9 @@
     <a href="game-design.html">Game Design</a>
     <a href="narrative.html">Narrative</a>
     <a href="vfx.html">VFX</a>
-    <a href="level-design.html">Level Design</a>
+    <!-- <a href="level-design.html">Level Design</a> -->
     <a href="index.html#about">About <span class="n">→</span></a>
-    <a href="index.html#contact">Contact <span class="n">→</span></a>
+    <a href="index.html#get-in-touch">Contact <span class="n">→</span></a>
   </nav>
 </header>
 
@@ -59,72 +59,146 @@
   <article class="mod rise">
     <div class="mod__media duo">
       <span class="reg red tl"></span><span class="reg br"></span>
-      <div class="frame frame--halftone">
-        <div class="frame__media">
-          <iframe src="https://www.youtube-nocookie.com/embed/2aWZTeQMw_0?rel=0&autoplay=1&mute=1&loop=1&playlist=2aWZTeQMw_0" title="Lucky Duckies — Official Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <div style="display:grid;gap:8px;margin-bottom:8px;">
+        <img src="Pictures/Screenshot%202026-06-02%20165329.png" alt="Crown splash modelled in Houdini — particle fluid surface result" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:var(--r-md);background:var(--ink);">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <img src="Pictures/Screenshot%202026-06-02%20165338.png" alt="Base circle curve in Houdini viewport" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r-md);background:var(--ink);">
+          <img src="Pictures/Screenshot%202026-06-02%20165348.png" alt="Spray direction normals radiating from crown base" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r-md);background:var(--ink);">
         </div>
-        <div class="frame__cap"><span>FIG. 03.1 — <span class="red">LUCKY DUCKIES</span></span><span>WATER · BUBBLES · SPLASH</span></div>
+      </div>
+      <div style="display:grid;gap:8px;">
+        <div class="frame frame--halftone">
+          <div class="frame__media">
+            <video src="Videos/WaterSplashOneWebsite6-4-26.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <div class="frame__cap"><span>FIG. 03.1a — <span class="red">LUCKY DUCKIES</span></span><span>WATER · SPLASH · 01</span></div>
+        </div>
+        <div class="frame">
+          <div class="frame__media">
+            <video src="Videos/WaterSplashTwoWebsite6-4-26.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <div class="frame__cap"><span>FIG. 03.1b — <span class="red">LUCKY DUCKIES</span></span><span>WATER · SPLASH · 02</span></div>
+        </div>
+        <div class="frame">
+          <div class="frame__media">
+            <video src="Videos/WaterSplashThreeWebsite6-4-26.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <div class="frame__cap"><span>FIG. 03.1c — <span class="red">LUCKY DUCKIES</span></span><span>WATER · SPLASH · 03</span></div>
+        </div>
       </div>
     </div>
     <div class="mod__text">
       <div class="tag-row">
         <span class="tag tag--red">Water &amp; Bath FX</span>
-        <span class="tag">Unreal 5.5</span>
         <span class="tag">Houdini</span>
+        <span class="tag">VAT</span>
+        <span class="tag">Unreal 5.5</span>
         <span class="tag">PC · Mobile</span>
       </div>
-      <h2 class="proj-title">Lucky Duckies</h2>
-      <p class="proj-kicker">The Signature Feel of Bath-Time Chaos</p>
-      <p class="proj-over">Water-spray hijinks and over-the-top bath-time chaos give the game its unmistakable look and feel.</p>
+      <h2 class="proj-title">Lucky Duckies Water Splash</h2>
+      <p class="proj-kicker">Crown Splash — Houdini to Unreal</p>
+      <p class="proj-over">A rubber ducky water splash, created in Houdini and implemented in Unreal via Vertex Animation Textures.</p>
       <ul class="bullets">
-        <li data-n="1">Spray, bubbles, and splashes built in the Unreal Engine 5.5 pipeline with Houdini.</li>
-        <li data-n="2">Effects tuned as readable gameplay signals — telegraphing water wheels, launches, and hazards, not just decoration.</li>
-        <li data-n="3">Authored to hold up across PC and mobile while keeping the bouncy, buoyant tone of the trailer.</li>
+        <li data-n="1">Modelled a crown splash in Houdini, converted it to VDB, then used Houdini's particle fluid surface to generate the splash geometry.</li>
+        <li data-n="2">Used the oceansource node to create a water tank capturing surface ripples, then clipped the tank and reduced polygons for real-time performance.</li>
+        <li data-n="3">Exported the result as a VAT and hooked it up in Unreal to trigger when the player lands on the water surface.</li>
       </ul>
     </div>
   </article>
 
-  <!-- MYTH OF LUMI (flip, trailer) -->
+  <!-- WATER WHEEL (flip) -->
   <article class="mod mod--flip rise">
     <div class="mod__media duo">
       <span class="reg tl"></span><span class="reg red br"></span>
-      <div class="frame">
-        <div class="frame__media">
-          <iframe src="https://www.youtube-nocookie.com/embed/pmrdBcIemHc?rel=0&autoplay=1&mute=1&loop=1&playlist=pmrdBcIemHc" title="Myth of Lumi — Official Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <div style="display:grid;gap:8px;">
+        <div class="frame frame--halftone">
+          <div class="frame__media">
+            <video src="Videos/WaterwheelOneWebsite6-4-26.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <div class="frame__cap"><span>FIG. 03.2a — <span class="red">WATER WHEEL</span></span><span>MAYA · HOUDINI · UNREAL · 01</span></div>
         </div>
-        <div class="frame__cap"><span>FIG. 03.2 — <span class="red">MYTH OF LUMI</span></span><span>CARD PHYSICS · MAGIC</span></div>
+        <div class="frame">
+          <div class="frame__media">
+            <video src="Videos/WaterwheelTwoWebsite6-4-26.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <div class="frame__cap"><span>FIG. 03.2b — <span class="red">WATER WHEEL</span></span><span>MAYA · HOUDINI · UNREAL · 02</span></div>
+        </div>
+        <div class="frame">
+          <div class="frame__media">
+            <video src="Videos/WaterwheelThreeWebsite6-4-26.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <div class="frame__cap"><span>FIG. 03.2c — <span class="red">WATER WHEEL</span></span><span>MAYA · HOUDINI · UNREAL · 03</span></div>
+        </div>
+        <div class="frame">
+          <div class="frame__media">
+            <video src="Videos/WaterwheelfourWebsite6-4-26.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <div class="frame__cap"><span>FIG. 03.2d — <span class="red">WATER WHEEL</span></span><span>MAYA · HOUDINI · UNREAL · 04</span></div>
+        </div>
       </div>
     </div>
     <div class="mod__text">
       <div class="tag-row">
-        <span class="tag tag--role">Card Physics &amp; Magic</span>
-        <span class="tag">Unity</span>
-        <span class="tag">Physics</span>
-        <span class="tag">Dark Fantasy</span>
+        <span class="tag tag--role">Waterfall Sim</span>
+        <span class="tag">Maya</span>
+        <span class="tag">Houdini</span>
+        <span class="tag">VAT</span>
+        <span class="tag">Unreal 5.5</span>
       </div>
-      <h2 class="proj-title">The Myth<br>of Lumi</h2>
-      <p class="proj-kicker">Spectacle You Throw With Your Hands</p>
-      <p class="proj-over">A 3D physics-based turf war fought by throwing cards — where flight, coverage, and conjured magic are the core spectacle.</p>
+      <h2 class="proj-title">Lucky Duckies<br>Water Wheel</h2>
+      <p class="proj-kicker">Maya to Houdini to Unreal</p>
+      <p class="proj-over">A waterfall turning a waterwheel — built across Maya, Houdini, and Unreal using velocity-driven FLIP fluids and Vertex Animation Textures.</p>
       <ul class="bullets">
-        <li data-n="1">Card flight and battlefield coverage read as the central visual payoff of every duel.</li>
-        <li data-n="2">Each summoned Lumi unleashes a distinct magical ability; effects chain together for deck synergy.</li>
-        <li data-n="3">Staged in the atmospheric dark-fantasy underground city of Prospera — mood carried through effect and light.</li>
+        <li data-n="1">Animated a rotating waterwheel in Maya and imported it into Houdini as a collision object; set up a velocity attribute on the sim to transfer the wheel's motion into the water.</li>
+        <li data-n="2">Created a waterfall FLIP simulation in Houdini using a water source, drove directional flow through a custom velocity field, and resolved collisions against the spinning wheel geometry.</li>
+        <li data-n="3">Converted the simulation to VDB then polygons, exported via VAT, and built the water shading materials in Unreal Engine 5.5.</li>
       </ul>
     </div>
   </article>
+
+  <!-- GET IN TOUCH -->
+  <section class="getin rise" id="get-in-touch" aria-label="Get in touch">
+    <div class="getin__l">
+      <span class="getin__label">Get in touch</span>
+      <h2 class="getin__big">Have a project, a role, or a wild idea? <span class="red">Email me.</span></h2>
+      <p class="getin__sub">Open to game design, narrative, and writing roles — and always happy to talk shop.</p>
+    </div>
+    <div class="getin__r">
+      <form class="getin__form" id="contact-form" novalidate>
+        <div class="getin__rowfields">
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="you@studio.com" autocomplete="email">
+          </div>
+        </div>
+        <div class="field">
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" name="message" placeholder="Tell me about the project, role, or idea…"></textarea>
+        </div>
+        <button type="submit" class="getin__send">Send message <span class="arr">→</span></button>
+      </form>
+      <div class="getin__alt">
+        <a href="https://www.linkedin.com/in/chrisiredale/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
 
 </main>
 
 <footer class="foot" id="contact">
   <div class="foot__in">
-    <p class="foot__big">Next: <a href="level-design.html">Level Design →</a></p>
+    <!-- <p class="foot__big">Next: <a href="level-design.html">Level Design →</a></p> -->
     <div class="foot__grid">
       <nav class="foot__nav" aria-label="Footer">
         <a href="index.html">Home</a>
         <a href="game-design.html">Game Design</a>
         <a href="narrative.html">Narrative</a>
         <a href="vfx.html">VFX</a>
-        <a href="level-design.html">Level Design</a>
+        <!-- <a href="level-design.html">Level Design</a> -->
         <a href="https://www.linkedin.com/in/chrisiredale/" target="_blank" rel="noopener">LinkedIn ↗</a>
       </nav>
       <div class="foot__meta">
@@ -138,5 +212,21 @@
 
 <script src="image-slot.js"></script>
 <script src="assets/site.js"></script>
+<script>
+  (function(){
+    var form=document.getElementById('contact-form');
+    if(!form) return;
+    var TO='chrisjiredale@gmail.com';
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var name=form.querySelector('[name=name]').value.trim();
+      var email=form.querySelector('[name=email]').value.trim();
+      var msg=form.querySelector('[name=message]').value.trim();
+      var subject='Portfolio enquiry'+(name?(' — '+name):'');
+      var body=msg+'\n\n—\n'+(name?('From: '+name+'\n'):'')+(email?('Email: '+email):'');
+      window.location.href='mailto:'+TO+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    });
+  })();
+</script>
 </body>
 </html>
