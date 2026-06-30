@@ -416,7 +416,8 @@
             <label for="cf-msg">Message</label>
             <textarea id="cf-msg" name="message" placeholder="Tell me about the project, role, or idea…"></textarea>
           </div>
-          <button type="submit" class="getin__send">Send message <span class="arr">→</span></button>
+          <button type="submit" class="getin__send" id="cf-btn">Send message <span class="arr">→</span></button>
+          <p id="cf-status" style="display:none;margin-top:12px;font-family:var(--ff-mono);font-size:12px;letter-spacing:.08em;"></p>
         </form>
         <div class="getin__alt">
           <a href="https://www.linkedin.com/in/chrisiredale/" target="_blank" rel="noopener">LinkedIn ↗</a>
@@ -472,15 +473,41 @@ Los Angeles, CA</div>
   (function(){
     var form=document.getElementById('contact-form');
     if(!form) return;
-    var TO='chris@chrisiredale.com';
+    var btn=document.getElementById('cf-btn');
+    var status=document.getElementById('cf-status');
     form.addEventListener('submit',function(e){
       e.preventDefault();
-      var name=(document.getElementById('cf-name').value||'').trim();
-      var email=(document.getElementById('cf-email').value||'').trim();
-      var msg=(document.getElementById('cf-msg').value||'').trim();
-      var subject='Portfolio enquiry'+(name?(' — '+name):'');
-      var body=msg+'\n\n—\n'+(name?('From: '+name+'\n'):'')+(email?('Email: '+email):'');
-      window.location.href='mailto:'+TO+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+      btn.disabled=true;
+      btn.textContent='Sending…';
+      status.style.display='none';
+      var data={
+        name:(document.getElementById('cf-name').value||'').trim(),
+        email:(document.getElementById('cf-email').value||'').trim(),
+        message:(document.getElementById('cf-msg').value||'').trim()
+      };
+      fetch('https://formspree.io/f/mnjkbqjb',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body:JSON.stringify(data)
+      }).then(function(r){
+        if(r.ok){
+          form.reset();
+          status.style.color='var(--red)';
+          status.textContent='Message sent — I\'ll be in touch soon.';
+        } else {
+          status.style.color='#ff6b6b';
+          status.textContent='Something went wrong. Try emailing me directly.';
+        }
+        status.style.display='block';
+        btn.disabled=false;
+        btn.innerHTML='Send message <span class="arr">→</span>';
+      }).catch(function(){
+        status.style.color='#ff6b6b';
+        status.textContent='Network error. Try again or email me directly.';
+        status.style.display='block';
+        btn.disabled=false;
+        btn.innerHTML='Send message <span class="arr">→</span>';
+      });
     });
   })();
 </script>
