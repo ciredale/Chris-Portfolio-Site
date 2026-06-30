@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chrisiredale.com/sitemap.xml
