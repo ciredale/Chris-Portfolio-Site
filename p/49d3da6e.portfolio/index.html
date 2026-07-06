@@ -1,0 +1,108 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+  body{background:var(--paper);}
+  .wrap{max-width:900px;margin:0 auto;padding:0 24px 56px;}
+  .mod--solo{grid-template-columns:1fr;}
+  .plate-head__media{max-width:480px;margin-top:22px;}
+  .plate-head__media .frame__media{aspect-ratio:16/9;}
+  .proj-meta{display:flex;flex-wrap:wrap;gap:4px 16px;margin:0 0 10px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft);}
+  .proj-meta__label{color:var(--red);margin-right:4px;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="plate-head">
+      <div class="plate-head__lock">
+        <div><h1 class="plate-head__title">Building the tools and pipelines behind game production</h1></div>
+        <p class="plate-head__thesis">Production software, custom art pipelines, and hands-on AI tool integration across game and web projects.</p>
+      </div>
+      <div class="plate-head__media"><div class="frame frame--halftone">
+          <div class="frame__media"><iframe src="https://www.youtube-nocookie.com/embed/PKdvw2A7BK0?rel=0&autoplay=1&mute=1&loop=1&playlist=PKdvw2A7BK0&start=3" title="Chris Iredale — Reel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+          <div class="frame__cap"><span>FIG. 00 — <span class="red">C. IREDALE</span></span><span></span></div>
+        </div></div>
+    </header>
+    <article class="mod rise">
+      <div class="mod__media">
+      <div style="display:grid;gap:8px;">
+        <div class="frame">
+          <div class="frame__media"><img src="../../Pictures/Screenshot 2026-07-03 113841.png" alt="PwrUP dashboard — sprint burndown, status overview, and activity feed"></div>
+          <div class="frame__cap"><span>FIG. 1.1a — <span class="red">PWRUP</span></span><span>DASHBOARD · 01</span></div>
+        </div>
+        <div class="frame">
+          <div class="frame__media"><img src="../../Pictures/Screenshot 2026-07-03 113919.png" alt="PwrUP task board — kanban columns for to do, in progress, in review, and done"></div>
+          <div class="frame__cap"><span>FIG. 1.1b — <span class="red">PWRUP</span></span><span>TASK BOARD · 02</span></div>
+        </div>
+      </div>
+    </div>
+      <div class="mod__text">
+        <div class="proj-meta"><span class="proj-meta__item"><span class="proj-meta__label">Team Size</span> 1</span><span class="proj-meta__item"><span class="proj-meta__label">Platform</span> Web</span><span class="proj-meta__item"><span class="proj-meta__label">Role</span> Solo Developer</span></div>
+        <h2 class="proj-title">PwrUP</h2>
+        <p class="proj-kicker">Solo-built production web app for game teams</p>
+        <p class="proj-over">End-to-end kanban board, QA bug tracker, team chat with live activity feed, roster tracking, documentation wiki, and roadmap, built solo on Next.js and Supabase, with an optional Claude-generated status report feature.</p>
+      </div>
+    </article>
+    <article class="mod rise mod--flip mod--solo">
+      
+      <div class="mod__text">
+        
+        <h2 class="proj-title">NDA Project, Nitrate Games</h2>
+        <p class="proj-kicker">Custom production software for a 2-person team</p>
+        <p class="proj-over">Built a kanban board, burndown chart, sprint tracker, activity feed, and build status tracker, then connected it to Discord and GitHub to automate notifications and give executives live build visibility.</p>
+      </div>
+    </article>
+    <article class="mod rise">
+      <div class="mod__media">
+      <div style="display:grid;gap:8px;">
+        <div class="frame frame--halftone">
+          <div class="frame__media"><iframe src="https://www.youtube-nocookie.com/embed/2aWZTeQMw_0?rel=0&autoplay=1&mute=1&loop=1&playlist=2aWZTeQMw_0" title="Lucky Duckies — official trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+          <div class="frame__cap"><span>FIG. 3.1a — <span class="red">LUCKY DUCKIES</span></span><span>USC GAMES EXPO '26</span></div>
+        </div>
+        <div class="frame">
+          <div class="frame__media"><img src="../../Pictures/Screenshot 2026-06-02 165329.png" alt="Crown splash modelled in Houdini — particle fluid surface result"></div>
+          <div class="frame__cap"><span>FIG. 3.1b — <span class="red">LUCKY DUCKIES</span></span><span>HOUDINI · 01</span></div>
+        </div>
+        <div class="frame">
+          <div class="frame__media"><video src="../../Videos/WaterSplashOneWebsite6-4-26.mp4" autoplay muted loop playsinline></video></div>
+          <div class="frame__cap"><span>FIG. 3.1c — <span class="red">LUCKY DUCKIES</span></span><span>WATER · SPLASH · 01</span></div>
+        </div>
+      </div>
+    </div>
+      <div class="mod__text">
+        <div class="proj-meta"><span class="proj-meta__item"><span class="proj-meta__label">Team Size</span> 64</span><span class="proj-meta__item"><span class="proj-meta__label">Engine</span> Unreal Engine 5.5</span><span class="proj-meta__item"><span class="proj-meta__label">Role</span> Creative Director</span></div>
+        <h2 class="proj-title">Lucky Duckies</h2>
+        <p class="proj-kicker">Houdini-to-Unreal VFX pipeline, USC Advanced Game Project</p>
+        <p class="proj-over">Built a custom pipeline moving simulated water splashes and waterfalls from Houdini into Unreal Engine 5.5 using VATs, for a 64-person student production.</p>
+      </div>
+    </article>
+    <article class="mod rise mod--flip">
+      <div class="mod__media"><div class="frame frame--halftone">
+          <div class="frame__media"><iframe src="https://www.youtube-nocookie.com/embed/pmrdBcIemHc?rel=0&autoplay=1&mute=1&loop=1&playlist=pmrdBcIemHc" title="Myth of Lumi — official trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+          <div class="frame__cap"><span>FIG. 4.1 — <span class="red">MYTH OF LUMI</span></span><span>STEAM · 89% POSITIVE</span></div>
+        </div></div>
+      <div class="mod__text">
+        <div class="proj-meta"><span class="proj-meta__item"><span class="proj-meta__label">Team Size</span> 30</span><span class="proj-meta__item"><span class="proj-meta__label">Engine</span> Unity</span><span class="proj-meta__item"><span class="proj-meta__label">Role</span> Narrative Designer</span></div>
+        <h2 class="proj-title">Myth of Lumi</h2>
+        <p class="proj-kicker">September 2024 - May 2025</p>
+        <p class="proj-over">Served as Narrative Designer for the Gold Award-winning project at Tencent's Game Awards, securing 1st place out of 1,300 submissions. Collaborated with the director and lead designers to craft the world-building, characters, and dialogue for a physics-based card game featuring card-wielding magicians and summonable creatures. Designed 3 enemy characters for a game built in Unity, collaborating via Perforce; sped up pre-production time by 3 weeks. Built a system for creature creation in Google Sheets that sped up narrative and game design timelines by 2 weeks. Completed world-building documents and developed a 100-slide Story Bible. Created a custom task tracking pipeline in Notion and Discord to track over 100 tasks a week. Created, assigned, and tracked over 100 tasks a week across all departments: Design, Art, Engineering, UI/UX, QA. Incorporated Claude into engineering processes, which sped up deliverables by 2 months.</p>
+      </div>
+    </article>
+    <article class="mod rise">
+      <div class="mod__media"><div class="frame">
+          <div class="frame__media"><video src="../../Videos/DoodleCardsTrailer.mp4" autoplay muted loop playsinline></video></div>
+          <div class="frame__cap"><span>FIG. 5.1 — <span class="red">DOODLE CARDS</span></span><span>MASTERWORKS STUDIOS</span></div>
+        </div></div>
+      <div class="mod__text">
+        <div class="proj-meta"><span class="proj-meta__item"><span class="proj-meta__label">Platform</span> Web</span><span class="proj-meta__item"><span class="proj-meta__label">Role</span> Game Designer</span></div>
+        <h2 class="proj-title">Doodle Cards</h2>
+        <p class="proj-kicker">Masterworks Studios · January 2026 - May 2026</p>
+        <p class="proj-over">Delivered and maintained 20 page game design document for a published party card game. Designed and implemented 15 mini-games, which increased replayability and added humor to the game. Coded and implemented 15 mini-games in CSS and HTML for a Next.js game hosted on fly.io. Oversaw an expedited game development process from prototype to shipped build in 5 months. Incorporated Claude into engineering processes, which sped up deliverables by 2 months.</p>
+      </div>
+    </article>
+  </div>
+  <script src="../../assets/site.js"></script>
+</body></html>
